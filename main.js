@@ -3435,10 +3435,10 @@ var glassItems = [
    }
 ];
 
-
+/*
 $( document ).ready(function() {
-   alert( "Look at all these ugly things!" );
-});
+   alert( "Fused glass search" );
+});*/
 
 glassItems.forEach(function(glass, index){
    glass.Images.forEach(function(image){
@@ -3450,7 +3450,7 @@ glassItems.forEach(function(glass, index){
       totalString += '<p><strong>' + glass.price + '</strong></p>';
       totalString += '<button class="delete">Delete</button>';
       totalString += '<button class="purchase" data-index="'+ index + '">Purchase</button>';
-      //console.log(index);
+      // console.log(index);
       totalString += '</div>';
       totalString += '</div>';
       $('.container').append(totalString);
@@ -3466,7 +3466,7 @@ $(".delete").click(function() {
       });
    }
 });
-//=========5 hours of googlings====
+
 $(".purchase").click(function() {
    var buy = confirm("Are you sure you want to buy?");
    if (buy === true) {
@@ -3475,8 +3475,3 @@ $(".purchase").click(function() {
       window.open(url);
    }
 });
-
-
-
-
-
